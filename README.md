@@ -1,46 +1,24 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Description
+As a Web Developer you’ll be asked to come up with innovative applications that solve real world problems for real people. But something you’ll quickly learn is that no matter how many wonderful features you pack into an app users won’t use it if it isn’t performant. In other words, there is a direct link between how an app performs and whether users perceive it as usable.
+The objective of the Shuffle Card Deck app is to find the fastest technique for shuffling a deck of cards you can use in game apps you create. But, more important it will provide you with experience at measuring and evaluating app performance.
+Your task is to implement the performance evaluation algorithm, the Xorshift pseudorandom number generator, as well as the WELL512a.c algorithm if you choose to attempt the bonus feature.
+User Stories
+User can see a panel containing a text box the user can enter the number of rounds into, three output text boxes to contain the starting time, ending time, and total time of the test, and two buttons — ‘JS Random’, ‘Xorshift’.
+User can enter a number from 1 to 10,000 to specify the number of times (or rounds) the selected random number is to be executed.
+User can click one of the three buttons to start the evaluation of the selected random number algorithm. The random number algorithm will be executed for the number of rounds entered by the user above.
+User can see a warning message if number of rounds has not been entered, if it is not within the range 1 to 10,000, or if it is not a valid integer.
+User can see a tabular output area where the results of each algorithm are displayed — algorithm name, time started, time ended, and total time.
+User can see a warning dialog with a ‘Cancel’ and a ‘OK’ button if the number of rounds is changed before all three tests have been run.
+User can click the ‘Cancel’ button in the warning dialog to dismiss the dialog with no changes.
+User can click the ‘OK’ button in the warning dialog to clear the output area and close the warning dialog.
+Bonus features
+User can see a third algorithm button — ‘WELL512a.c’.
+Developer should review the output and determine why the fastest algorithm is faster than the slowest algorithm.
+Useful links and resources
+Random Number Generation (Wikipedia)
+Math.random (MDN)
+Xorshift (Wikipedia)
+WELL512a.c
+console.time (MDN)
+Using the Chrome DevTools Audit Feature to Measure and Optimize Performance (Part 1)
+Using the Chrome DevTools Audit Feature to Measure and Optimize Performance (Part 2)
